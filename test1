@@ -1,0 +1,19 @@
+class Bird:
+    total_count = 0
+
+    def __init__(self,name,color):
+        self.name = name
+        self.color = color
+        Bird.total_count += 1
+    def sing(self):
+        print(f"{self.name} is singing♪")
+
+bird1 = Bird("Pino","White")
+bird2 = Bird("Choco","black")
+bird3 = Bird("Sakura", "pink")
+
+print(bird1.name, bird1.color)
+print("All", Bird.total_count, "There are ")
+
+class WhiteSparrow(Bird):
+    pass
